@@ -1,3 +1,5 @@
+<script type="module" src="dist/index.js"></script>
+
 {
   "name": "express",
   "version": "1.0.0",
