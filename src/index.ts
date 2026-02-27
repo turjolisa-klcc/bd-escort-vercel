@@ -1,52 +1,60 @@
-import express from 'express'
-import path from 'path'
-import { fileURLToPath } from 'url'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD ESCORT SERVICES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-logo">
+            <img src="Jpg/Logo.jpeg" alt="Logo">
+        </div>
+        <div class="header-actions">
+            <a href="#" class="auth-btn btn-signup">Join Now</a>
+            <div class="menu-toggle" id="menuOpen"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+    </header>
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+    <!-- Slide Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <img src="Jpg/Logo.jpeg" alt="Menu Logo">
+            <p>VERIFIED ELITE NETWORK</p>
+        </div>
+        <div class="menu-body">
+            <a href="#" class="menu-link" onclick="showPage('home')"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#" class="menu-link" onclick="showPage('gallery')"><i class="fa-solid fa-images"></i> Gallery</a>
+            <a href="#" class="menu-link" onclick="showPage('news')"><i class="fa-solid fa-newspaper"></i> News Update</a>
+            <a href="#" class="menu-link" onclick="showPage('booking')"><i class="fa-solid fa-calendar-check"></i> Online Booking</a>
+            <a href="#" class="menu-link" onclick="showPage('signup')"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            <a href="#" class="menu-link" onclick="showPage('joining')"><i class="fa-solid fa-handshake"></i> Joining</a>
+            <a href="#" class="menu-link" onclick="showPage('privacy')"><i class="fa-solid fa-user"></i> Privacy Policy</a>
+        </div>
+    </nav>
 
-const app = express()
+    <!-- Stories -->
+    <section class="story-section">
+        <div class="story-container" id="storyContainer"></div>
+    </section>
 
-// Home route - HTML
-app.get('/', (req, res) => {
-  res.type('html').send(`
-    <!doctype html>
-    <html>
-      <head>
-        <meta charset="utf-8"/>
-        <title>Express on Vercel</title>
-        <link rel="stylesheet" href="/style.css" />
-      </head>
-      <body>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/api-data">API Data</a>
-          <a href="/healthz">Health</a>
-        </nav>
-        <h1>Welcome to Express on Vercel 🚀</h1>
-        <p>This is a minimal example without a database or forms.</p>
-        <img src="/logo.png" alt="Logo" width="120" />
-      </body>
-    </html>
-  `)
-})
+    <!-- Profile Grid -->
+    <div class="gallery-grid" id="profileGrid"></div>
 
-app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
-})
+    <!-- News Updates -->
+    <section class="news-updates" id="newsUpdateContainer"></section>
 
-// Example API endpoint - JSON
-app.get('/api-data', (req, res) => {
-  res.json({
-    message: 'Here is some sample API data',
-    items: ['apple', 'banana', 'cherry'],
-  })
-})
+    <footer>
+        <div class="footer-logo">BD ESCORT SERVICES</div>
+        <div class="footer-text">
+            BD ESCORT SERVICES AND ONLINE DATING WEB APPS, Dhaka's premier 24-hour destination for elite companionship.
+        </div>
+    </footer>
 
-// Health check
-app.get('/healthz', (req, res) => {
-  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
-})
-
-export default app
+    <!-- Compiled JS -->
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
