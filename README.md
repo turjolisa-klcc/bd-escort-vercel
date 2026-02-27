@@ -1,31 +1,17 @@
-# Express.js on Vercel
+# BD ESCORT WEB APPS
 
-Basic Express.js + Vercel example that serves html content, JSON data and simulates an api route.
+**BD ESCORT WEB APPS** is a mobile-friendly web application for elite companionship services in Dhaka. Built with **Express.js** (backend) and **HTML/CSS/JS** (frontend), optimized for deployment on **Vercel**.
 
-## How to Use
+---
 
-You can choose from one of the following two methods to use this repository:
+## Features
 
-### One-Click Deploy
+- Responsive mobile-first design
+- Express.js backend with serverless support for Vercel
+- Frontend with interactive sections: Stories, Verified Profiles, Latest News Updates
+- Telegram bot integration for dynamic content
+- Fully customizable pages: Home, Gallery, News, Booking, Sign Up, Privacy Policy
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+---
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/express&project-name=express&repository-name=express)
-
-### Clone and Deploy
-
-```bash
-git clone https://github.com/vercel/examples/tree/main/solutions/express
-```
-
-Install the Vercel CLI:
-
-```bash
-npm i -g vercel
-```
-
-Then run the app at the root of the repository:
-
-```bash
-vercel dev
-```
+## Project Structure
