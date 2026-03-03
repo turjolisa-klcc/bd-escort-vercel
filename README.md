@@ -1,6 +1,6 @@
 # BD ESCORT WEB APPS
 
-**BD ESCORT WEB APPS** is a mobile-friendly web application for elite companionship services in Dhaka. Built with **Express.js** (backend) and **HTML/CSS/JS** (frontend), optimized for deployment on **Vercel**.
+**BD ESCORT WEB APPS** is a mobile-friendly web application for elite companionship services in Dhaka. Built with **index.html** (backend) and **HTML/CSS/JS** (frontend), optimized for deployment on **Vercel**.
 
 ---
 
